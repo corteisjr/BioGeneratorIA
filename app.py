@@ -60,7 +60,7 @@ if st.button("Gerar Bio"):
             bio = gerar_bio(nome, ocupacao, interesses, estilo)
             if bio:
                 st.success("Aqui está sua bio:")
-                st.code(bio, language="markdown", line_numbers=8)
+                st.code(bio, language="markdown",  height=150, wrap_lines=True)
     else:
         st.warning("Preencha pelo menos o nome e a ocupação.")
 
