@@ -4,7 +4,7 @@ import requests
 
 
 # Config
-API_KEY = config("OPENROUTER_API_KEY")
+API_KEY = st.secrets["OPENROUTER_API_KEY"] or config("OPENROUTER_API_KEY")
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 HEADERS = {
